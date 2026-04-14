@@ -24,6 +24,19 @@ repository-code: "https://github.com/denisecase/cintel-06-continuous-intelligenc
 url: "https://github.com/denisecase/cintel-06-continuous-intelligence"
 license: MIT
 
+ - family-names: Chastain
+    given-names: Megan
+    affiliation: "Northwest Missouri State University, USA"
+
+repository-code: "https://github.com/denisecase/cintel-06-continuous-intelligence"
+url: " - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, USA"
+
+repository-code: "https://github.com/Megan-Chastain1/cintel-06-continuous-intelligence"
+url: "https://github.com/Megan-Chastain1/cintel-06-continuous-intelligence"
+
 abstract: |
   Continuous Intelligence Example Project 6 - Continuous Intelligence.
   Demonstrates professional Python project structure and workflows.
