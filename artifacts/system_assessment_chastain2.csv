@@ -1,0 +1,2 @@
+avg_requests,avg_errors,avg_error_rate,avg_latency_ms,system_state
+5000.5,0.0286,0.000012318122559002922,0.20096157115977145,STABLE
