@@ -160,16 +160,16 @@ git push -u origin main
 ## Custom Project
 
 ### Dataset
-(Describe the dataset you used.)
+I wrote a script (with the help of AI) to generate a dataset with 10000 entries for errors and lantency in ms. I decided to do this because I has having a hard time getting a new dataset to load, so I made my own.
 
 ### Signals
-(Describe the signals used and/or created)
+Thresholds for latency and errors were used.
 
 ### Experiments
-(Describe your modification experiments)
+I used a new dataset.
 
 ### Results
-(Describe the results you observed)
+Even with more entries, and random errors throughout the dataset, the program still came back as stable.
 
 ### Interpretation
-(Describe what this means for your system - provide the business intelligence you gained)
+This data for the generated system is consistent and working well.
