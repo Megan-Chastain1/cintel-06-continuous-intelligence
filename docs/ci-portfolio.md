@@ -10,7 +10,7 @@ This page summarizes my work on **continuous intelligence** projects.
 
 ### Repository Link
 
-[(Github repository)](https://github.com/Megan-Chastain1/cintel-06-continuous-intelligence)
+[Github repository](https://github.com/Megan-Chastain1/cintel-06-continuous-intelligence)
 
 ### Brief Overview of Project Tools and Choices
 
@@ -18,16 +18,16 @@ This page summarizes my work on **continuous intelligence** projects.
 
 ### Repository Link
 
-[(Anomoly detection repository)](https://github.com/Megan-Chastain1/cintel-02-static-anomalies)
+[Anomoly detection repository](https://github.com/Megan-Chastain1/cintel-02-static-anomalies)
 
 ### Techniques
 
 To detect anomalies, a threshold code was written to define the maximum and minimum reasonable values(1). Next, a code was written to detect any value above the maximum or below the minimum(2). The values detected as anomalies were saved in a CSV file in a folder labeled "Artifacts"(3).
 
-1.  # x is age in years, so 18 is the lower limit for adults
+1.   x is age in years, so 18 is the lower limit for adults
     MIN_REASONABLE_X_VALUE: Final[float] = 18.0
 
-    # y is height in inches, so maybe 6 feet (72 inches) is a reasonable upper limit
+     y is height in inches, so maybe 6 feet (72 inches) is a reasonable upper limit
     MAX_REASONABLE_Y_VALUE: Final[float] = 72.0
 
 2. anomalies_df: pl.DataFrame = df.filter(
@@ -41,7 +41,7 @@ To detect anomalies, a threshold code was written to define the maximum and mini
 
 ### Artifacts
 
-[Results)](https://github.com/Megan-Chastain1/cintel-02-static-anomalies/tree/main/artifacts)
+[Results](https://github.com/Megan-Chastain1/cintel-02-static-anomalies/tree/main/artifacts)
 
 The results show heights above the max threshold of 72 inches or an age less than 18 years old.
 
@@ -53,7 +53,7 @@ This analysis pulled out any value that existed above or below our set min and m
 
 ### Repository Link
 
-[(Signal Design Repository)](https://github.com/Megan-Chastain1/cintel-03-signal-design)
+[Signal Design Repository](https://github.com/Megan-Chastain1/cintel-03-signal-design)
 
 ### Signals
 
@@ -84,7 +84,7 @@ Average latency was calculated by taking a data point in the 'total_latency_ms' 
 
 ### Artifacts
 
-[(Results)](https://github.com/Megan-Chastain1/cintel-03-signal-design/tree/main/artifacts)
+[Results](https://github.com/Megan-Chastain1/cintel-03-signal-design/tree/main/artifacts)
 
 The results show a CSV file with the added columns and the calculated values of each row.
 
@@ -96,7 +96,7 @@ These signals were great to use, however without a threshold they don't show muc
 
 ### Repository Link
 
-[(Rolling Monitoring Repository)](https://github.com/Megan-Chastain1/cintel-04-rolling-monitoring)
+[Rolling Monitoring Repository](https://github.com/Megan-Chastain1/cintel-04-rolling-monitoring)
 
 ### Techniques
 
@@ -113,7 +113,7 @@ This is useful to see how a system is changing over time.
 
 ### Artifacts
 
-[(Results)](https://github.com/Megan-Chastain1/cintel-04-rolling-monitoring/tree/main/artifacts)
+[Results](https://github.com/Megan-Chastain1/cintel-04-rolling-monitoring/tree/main/artifacts)
 
 As seen in the results, using mean as the statistic, the values change as different rows are included in the calulations.
 
@@ -129,7 +129,7 @@ For the dataset used, patterns that formed are when mean rolling requests are hi
 
 ### Techniques
 
-Dirft was determined by first setting a threshold for the signals being used (1). Then the average was calculated for historic (reference) and current data (2). The data points were combined into one table. Then the difference was taken between the historic and current data (3). Drift flags were added to check to see if the difference exceed a set threshold (4). The flags generate true/false values. If drift is occuring the value generated is 'true'.
+ Dirft was determined by first setting a threshold for the signals being used (1). Then the average was calculated for historic (reference) and current data (2). The data points were combined into one table. Then the difference was taken between the historic and current data (3). Drift flags were added to check to see if the difference exceed a set threshold (4). The flags generate true/false values. If drift is occuring the value generated is 'true'.
 
 
 1. REQUESTS_DRIFT_THRESHOLD: Final[float] = 10.0
